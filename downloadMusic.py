@@ -12,7 +12,7 @@ folderName = 'youtubeMusic/'
 folder = directory+folderName
 if not os.path.exists(folder):
     os.makedirs(folder)
-cmd = 'youtube-dl --embed-thumbnail --download-archive downloaded.txt --no-post-overwrites -ciwx --audio-format mp3 -o "%(title)s.%(ext)s" {}'.format(playlistLink)
+cmd = 'youtube-dl --download-archive downloaded.txt --no-post-overwrites -ciwx --audio-format mp3 -o "%(title)s.%(ext)s" {}'.format(playlistLink)
 cmd = cmd.split()
 cmd[cmd.index('--download-archive')+1] = folder + cmd[cmd.index('--download-archive')+1] 
 cmd[cmd.index('-o')+1] = folder + cmd[cmd.index('-o')+1] 
