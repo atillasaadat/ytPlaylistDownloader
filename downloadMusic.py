@@ -1,6 +1,5 @@
 import subprocess
 import os
-from IPython import embed
 import argparse
 parser = argparse.ArgumentParser(description='get info')
 parser.add_argument('-d', type=str, help='music directory')
