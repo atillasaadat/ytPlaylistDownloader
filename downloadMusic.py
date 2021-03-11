@@ -1,7 +1,6 @@
 import subprocess
 import os
 import argparse
-from IPython import embed
 parser = argparse.ArgumentParser(description='get info')
 parser.add_argument('link', type=str, help='youtube playlist link')
 parser.add_argument('-d', type=str, help='music directory')
